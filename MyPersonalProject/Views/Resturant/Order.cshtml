@@ -1,0 +1,283 @@
+﻿
+@{
+    ViewBag.Title = "Order";
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+
+<div class="col-12" id="Banner"    >
+    <img src="~/Content/Img/orderimage.jpg"width="100%" height="auto" />
+    <div class="Banner-text" >
+        FOOD AT YOUR DOORSTEP
+
+    </div>
+
+</div>
+<br>
+<br>
+
+<div class="row" style="background-color: red;">
+    <div class="col-6" id="KYC">
+        <div> <p class="Banner-text pt-3 ">YOUR LOCAL STORE</p></div>
+        <div class="form-group">
+            <label class="text">ADDRESS-TYPE</label> 
+            <select class="form-control-md" id="addytype">
+                <option class="text" id="Apartment1">APARTMENT</option>
+                <option class="text">HOUSE</option>
+            </select>
+        </div>
+
+        <div class="row form-group">
+            <label class="text">SELECT CITY</label>
+            <select class="form-control-md" id="City">
+                <option class="text">LAGOS</option>
+                <option class="text">PORTHARCOUT</option>
+                <option class="text">AKURE</option>
+                <option class="text">ABUJA</option>
+                <option class="text">UYO</option>
+                <option class="text">IBADAN</option>
+            </select>
+        </div>
+
+        <div id="Apartment2">
+
+            <div class="form-group">
+                <label class="text">APAERTMENT  NAME</label>
+                <input type="text" class="form-control-md">
+            </div>
+
+            <div class="form-group ">
+                <label class="text">FLAT NO</label>
+                <input type="text" class="form-control-md">
+            </div>
+
+        </div>
+
+
+        <div class="form-group">
+            <label class="text">STREET</label>
+            <input type="text" class="form-control-lg" id="street">
+        </div>
+
+        <div class="form-group">
+            <label for="comment">Comment:</label>
+            <textarea class="form-control-lg" rows="5" id="comment"></textarea>
+            <p><strong class="mr-1">Example:</strong>Gate code, ring the door bell, etc.</p>
+        </div>
+        <div><input type="button" class="btn btn-info" value="CONTINUE"></div>
+
+    </div>
+
+
+    <div class="menu col-6">
+        <h3 class="text pt-3 "> <strong>AVAILAIBLE MENU</strong>  </h3>
+
+        <div class="form-group">
+            <label class="text">Select Class of Meal</label>
+            <select class="form-control-md meal " id="Menu">
+                <option class="text rice" value="RICE">RICE</option>
+                <option class="text swallow" value="SWALLOW"> SWALLOW</option>
+                <option class="text continental " value="CONTINENTAL">CONTINENTAL</option>
+                <option class="text pasteries " value="PASTERIES"> PASTERIES </option>
+            </select>
+        </div>
+        <br>
+
+        <div class="typeofrice" id="support">
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value=""> WHITE RICE
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">FRIED RICE
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">JOLLOF RICE
+                </label>
+            </div>
+
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value=""> OFADA RICE
+                </label>
+            </div>
+        </div>
+        <br>
+
+        <div class="typeofswallow" id="support">
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value=""> AMALA
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">POUNDED YAM
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">FUFU
+                </label>
+            </div>
+
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value=""> EBA
+                </label>
+            </div>
+
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value=""> WHEAT
+                </label>
+            </div>
+        </div>
+        <br>
+
+        <div class="typecontinental" id="support">
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value=""> CHINESE RICE
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">SPICY RICE
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">COCONUT RICE
+                </label>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="typeofpasteries" id="support">
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">BURGER
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">CHICKEN AND CHIPS
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">MEAT PIE
+                </label>
+            </div>
+
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value=""> CHICKEN PIE
+                </label>
+            </div>
+        </div>
+
+        <br>
+        <div class="type of soup" id="support">
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optradio"> EGUSI
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optradio">OGBONO
+                </label>
+            </div>
+            <div class="form-check-inline disabled">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optradio">OKRO
+                </label>
+            </div>
+            <div class="form-check-inline disabled">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optradio">AFAM
+                </label>
+            </div>
+            <div class="form-check-inline disabled">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optradio">EDIKANIKON
+                </label>
+            </div>
+            <div class="form-check-inline disabled">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optradio">STEW
+                </label>
+            </div>
+        </div>
+    </div>
+
+
+    <hr><hr>
+
+    <br><br>
+
+    <h3 class="pt-3 mr-1" style="position: relative;"> <strong>SUPPLEMENTARY ADDITION</strong></h3>
+    <div class=" col-8"></div>
+    <div class="suplementary mr-1">
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value=""> GRILLED CHICKEN
+            </label>
+        </div>
+
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">FRIED CHICKEN
+            </label>
+        </div>
+
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">FRIED FISH
+            </label>
+        </div>
+
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value=""> GRILLED BEEF
+            </label>
+        </div>
+
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">FRIED BEEF
+            </label>
+        </div>
+
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value=""> SALAD
+            </label>
+        </div>
+
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">GOAT MEAT
+            </label>
+        </div>
+
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value=""> MOI MOI
+            </label>
+        </div>
+
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">EGG
+            </label>
+        </div>
+    </div>
+
+

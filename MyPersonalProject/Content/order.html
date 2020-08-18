@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ogbonge food</title>
+
+
+ <!-- CSS only -->
+ <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="js/root.js"></script>
+
+
+
+<style>
+div #Banner{
+display: flex;
+ height: 400px;
+ width: auto;
+ background-image: url("img/orderimage.jpg");
+ background-repeat: no-repeat;
+ align-items: center;
+ justify-content: center;
+
+
+}
+
+div .Banner-text{
+    
+    font-family: cursive;
+    text-align: justify;
+    font-size: 2em;
+    color:white;
+    background-color: rgba(0, 0,0, 0);
+   
+}
+div #support{
+border: 2px solid white;
+
+}
+div .Apartment{
+display: none;
+
+}
+
+body { 
+  background-color: lightgrey;
+}
+
+</style>
+
+
+
+
+</head>
+<body >
+<div class="container">
+
+    <!-- Header-->
+        <div class="jumbotron bg-success">
+            <div class="row">
+                <div class="col-2"> <a href="index.html"> <button class="btn btn-primary">HOME</button class="btn btn-primary"></a></div>
+                <div class="col-2">  <a href="career.html"> <button class="btn btn-primary">CAREER</button></a></div>
+                <div class="col-2"> 
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                      About Us
+                    </button>
+                    <div class="dropdown-menu bg-primary">
+                      <a class="dropdown-item" href="#"> HISTORY</a>
+                      <a class="dropdown-item" href="#">MANAGEMENT</a>
+                      <a class="dropdown-item" href="#">BOARD</a>
+                      <a class="dropdown-item" href="#">AWARDS</a>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2"> <a href="index.html"> <button class="btn btn-primary">DELIVERY</button></a></div>
+                <div class="col-2"> <a href="outdoor.html"> <button class="btn btn-primary" >OUTDOOR</button></a></div>
+                <div class="col-2"> <a href="franshise.html"><button class="btn btn-primary">Franshise</button></a></div>
+            </div>
+        </div>
+
+        <!-- Body -->
+
+        <div class="col-12" id="Banner">
+            
+            <div class="Banner-text"> FOOD AT YOUR DOORSTEP
+
+            </div>
+
+        </div>
+                <br> <br>
+               
+          <div class="row" style="background-color: red;">     
+                <div class="col-6"  id="KYC" >
+                    <div  > <p class="Banner-text pt-3 ">YOUR LOCAL STORE</p></div>
+                        <div class="form-group">
+                            <label class="text">ADDRESS-TYPE</label>
+                            <select class="form-control-md" id="addytype">
+                            <option class="text" id="Apartment1">APARTMENT</option>
+                            <option class="text" >HOUSE</option> 
+                            </select>
+                        </div>
+
+                        <div class = "row " class="form-group">
+                            <label class="text">SELECT CITY</label>
+                            <select class="form-control-md" id="City">
+                            <option class="text">LAGOS</option>
+                            <option class="text">PORTHARCOUT</optionclass="text">
+                            <option class="text">AKURE</option>
+                            <option class="text">ABUJA</option>
+                            <option class="text" >UYO</option>
+                            <option class="text" >IBADAN</option>
+                            </select>
+                        </div >
+
+                        <div id="Apartment2">
+
+                                <div class="form-group">
+                                    <label class="text">APAERTMENT  NAME</label>
+                                    <input type="text" class="form-control-md" >
+                                </div>
+        
+                                <div class="form-group ">
+                                    <label class="text">FLAT NO</label>
+                                    <input type="text" class="form-control-md" >
+                                </div>
+
+                        </div>
+                        
+                        
+                        <div class="form-group">
+                            <label class="text">STREET</label>
+                            <input type="text" class="form-control-lg" id="street">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comment">Comment:</label>
+                            <textarea class="form-control-lg" rows="5" id="comment"></textarea>
+                            <p><strong class="mr-1">Example:</strong>Gate code, ring the door bell, etc.</p>
+                        </div>
+                    <div><input type="button" class="btn btn-info" value="CONTINUE"></div> 
+                    
+                </div>
+
+
+              <div class="menu col-6">
+                    <h3 class="text pt-3 " > <strong>AVAILAIBLE MENU</strong>  </h3>
+
+                    <div class="form-group">
+                        <label class="text">Select Class of Meal</label>
+                        <select class="form-control-md meal " id="Menu">
+                                <option class="text rice" value="RICE">RICE</option>
+                                <option class="text swallow"  value= "SWALLOW"> SWALLOW</option>
+                                <option class="text continental " value ="CONTINENTAL">CONTINENTAL</option>
+                                <option class="text pasteries " value="PASTERIES" > PASTERIES </option>
+                        </select>
+                    </div>
+                        <br>
+                    
+                    <div class="typeofrice" id="support">
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" value=""> WHITE RICE
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" value="">FRIED RICE
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" value="" >JOLLOF RICE
+                        </label>
+                      </div>
+
+                      <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" value=""> OFADA RICE
+                        </label>
+                      </div>
+                    </div>
+                        <br>
+
+                    <div class="typeofswallow" id="support"> 
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="checkbox" class="form-check-input" value=""> AMALA
+                            </label>
+                          </div>
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="checkbox" class="form-check-input" value="">POUNDED YAM
+                            </label>
+                          </div>
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="checkbox" class="form-check-input" value="" >FUFU
+                            </label>
+                          </div>
+    
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="checkbox" class="form-check-input" value="" > EBA
+                            </label>
+                          </div>
+
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="checkbox" class="form-check-input" value="" > WHEAT
+                            </label>
+                          </div>
+                        </div>
+                                <br>
+
+                        <div class="typecontinental"id="support">
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                  <input type="checkbox" class="form-check-input" value=""> CHINESE RICE
+                                </label>
+                              </div>
+                              <div class="form-check-inline">
+                                <label class="form-check-label">
+                                  <input type="checkbox" class="form-check-input" value="">SPICY RICE
+                                </label>
+                              </div>
+                              <div class="form-check-inline">
+                                <label class="form-check-label">
+                                  <input type="checkbox" class="form-check-input" value="" >COCONUT RICE
+                                </label>
+                              </div>
+                            </div>
+
+                            <br>
+
+                            <div class="typeofpasteries"id="support">
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                      <input type="checkbox" class="form-check-input" value="">BURGER
+                                    </label>
+                                  </div>
+                                  <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                      <input type="checkbox" class="form-check-input" value="">CHICKEN AND CHIPS
+                                    </label>
+                                  </div>
+                                  <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                      <input type="checkbox" class="form-check-input" value="" >MEAT PIE
+                                    </label>
+                                  </div>
+            
+                                  <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                      <input type="checkbox" class="form-check-input" value="" > CHICKEN PIE
+                                    </label>
+                                  </div>
+                                </div>
+
+                                    <br>
+                                <div class="type of soup"id="support">
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optradio"> EGUSI
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optradio">OGBONO
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline disabled">
+                                        <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optradio" >OKRO
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline disabled">
+                                        <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optradio" >AFAM
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline disabled">
+                                        <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optradio" >EDIKANIKON
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline disabled">
+                                        <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optradio" >STEW
+                                        </label>
+                                    </div>
+                                </div>
+                    </div >
+
+
+                                    <hr><hr>
+
+                            <br><br>
+            
+                <h3 class="pt-3 mr-1" style="position: relative;"> <strong>SUPPLEMENTARY ADDITION</strong></h3>
+                        <div class=" col-8"></div>
+                <div class="suplementary mr-1">
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value=""> GRILLED CHICKEN
+                            </label>
+                        </div>
+
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">FRIED CHICKEN
+                            </label>
+                        </div>
+
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" >FRIED FISH
+                            </label>
+                        </div>
+
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value=""> GRILLED BEEF
+                            </label>
+                        </div>
+
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">FRIED BEEF
+                            </label>
+                        </div>
+
+                        <div class="form-check-inline">
+                                <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value=""> SALAD
+                                </label>
+                        </div>
+
+                        <div class="form-check-inline">
+                                <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">GOAT MEAT
+                                </label>
+                        </div>
+
+                        <div class="form-check-inline">
+                                <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value=""> MOI MOI
+                                </label>
+                        </div>
+
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">EGG
+                                </label>
+                            </div>
+                     </div>
+                
+
+        
+
+
+
+
+       
+        
+
+<br> <br>
+<!-- footer -->
+<div class="jumbotron bg-success">
+    <table class="table table-borderless" >
+      <thead>
+        <tr>
+          <th style="width: 40%; color: oldlace;">OGONGE FOOD</th>
+          <th style="width: 30%;color: oldlace;">QUICK LINKS</th>
+          <th  style="width: 30%;color: oldlace;"  >CONTACT US</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td rowspan="1" > <P style="color: oldlace;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa nostrum ea minus recusandae quia in nobis, animi saepe eos </P>
+          </td>
+          <td> <img src="https://img.icons8.com/color/48/000000/facebook-new.png"/></td>
+
+          <td > <div class="form-group"><input type="text" class="form-control" id="Yemail" placeholder="Enter your email"></div></td>
+        </tr>
+
+        <tr>
+          <td><p style="color: oldlace;"> <i class="fa fa-mobile" aria-hidden="true"></i> 07064337777</p> </td>
+          <td > <a href="#"><img src="https://img.icons8.com/color/48/000000/instagram-new.png"/> </a> </td>
+          <td><div class="form-group"><textarea class="form-control" rows="3" id="comment" placeholder="Messege"></textarea>
+          </div>
+        </tr>
+
+        <tr>
+          <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.7190550498926!2d3.365134214412885!3d6.557106524591777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d8fb7c71927%3A0xbf2093741763f664!2s298%20Ikorodu%20Rd%2C%20Anthony%20Village%2C%20Lagos!5e0!3m2!1sen!2sng!4v1596468917795!5m2!1sen!2sng" width="100" height="50" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </td>
+          <td> <a href="#"><img src="https://img.icons8.com/color/48/000000/twitter.png"/> </a> </td>
+          <td><input type="submit" class="btn btn-primary fas fa-paper-plane" > </td>
+        </tr>
+        <tr>
+
+        </tr>
+
+        <tr>
+          
+        </tr>
+      </tbody>
+    </table>
+      
+</div> 
+</div>  
+</div> 
+<script>
+  $(document).ready(function(){
+
+    var menu = $("#menu").val();
+
+      $(menu=="SWALLOW").change(function(){
+          var selectedMeal = $(this).children("option:selected").val();
+
+          if(selectedMeal=="RICE"){
+              
+              alert("This is rice");
+          }
+
+          else if(selectedMeal=="SWALLOW") {
+              $(".typeofrice .typeofcontinental .typeofpastries").attr("disabled", true);
+              $(".typeofrice .typeofcontinental .typeofpastries").fadeOut(); 
+
+          }
+
+          else if(selectedMeal=="CONTINENTAL"){
+              $(".typeofrice .typeofswallow .typeofpastries").attr("disabled", true);
+              $(".typeofrice .typeofswallow .typeofpastries").fadeOut(); 
+               }
+               else if(selectedMeal=="PASTERIES") 
+               {
+
+              $(".typeofrice .typeofswallow .typeofpastries").attr("disabled", true);
+              $(".typeofrice .typeofswallow .typeofpastries").fadeOut();  
+             }
+      });
+    });
+  
+      </script>
+</body>
+</html>
+
+ <!-- Header
+
+<script>
+  $(Document).ready(function(){
+   $("#Menu").change(function(){
+        food();
+   });
+
+  });
+
+  function food() {
+    var menu = $("#Menu").val();
+    if(menu=="SWALLOW") {
+      alert("swallow");
+    }
+  }
+</script>
+
+-->

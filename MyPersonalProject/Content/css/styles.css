@@ -1,0 +1,65 @@
+h2{
+    font-family: 'Lobster';
+    text-align:  center;
+
+}
+
+body { 
+  background-color: lightgray;
+}
+
+div #Banner{
+  display: flex;
+   height: 400px;
+   width: auto;
+   background-image: url("img/orderimage.jpg");
+   background-repeat: no-repeat;
+   align-items: center;
+   justify-content: center;
+  
+  
+  }
+  
+  div #Banner-text{
+      
+      font-family: cursive;
+      text-align: justify;
+      font-size: 2em;
+      color:white;
+      background-color: black;
+     
+  }
+  
+
+  .available{
+
+
+    color: white;
+  }
+
+
+div #Banner {
+    display: flex;
+    height: 400px;
+    width: auto;
+    background-image: url("img/orderimage.jpg");
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+}
+
+div .Banner-text {
+    font-family: cursive;
+    text-align: justify;
+    font-size: 2em;
+    color: white;
+    background-color: rgba(0, 0,0, 0);
+}
+
+div #support {
+    border: 2px solid white;
+}
+
+div .Apartment {
+    display: none;
+}
